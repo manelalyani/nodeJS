@@ -1,11 +1,8 @@
-const generator = require('generate-password');
+var generator = require('generate-password');
 
-const password = generator.generate({
-  length: 10,
-  numbers: true,
-  symbols: true,
-  uppercase: true,
-  excludeSimilarCharacters: true
+var passwords = generator.generate( {
+	length: 10,
+	uppercase: false
 });
 
-console.log(password);
+console.log(passwords);
